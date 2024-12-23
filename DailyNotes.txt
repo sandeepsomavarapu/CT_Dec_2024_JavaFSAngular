@@ -1,0 +1,169 @@
+Week-2
+				datatype varname=value
+				
+					int age=
+					
+					byte  1 byte
+					
+					char 
+					c,c++-->
+					
+					
+					
+						byte age@123=32;
+						
+						identifier
+							a-z
+							A-Z
+							0-9
+							_
+							$
+						
+		OOPS:
+			inheritance		extends implements
+			abstraction		hiding -->abstract classes,interfaces-->abstract 
+			encapsulation	private 
+			polymorphisam	
+			
+					
+			interface A{
+			
+			1000
+			}	
+
+			interface B extends A{
+			
+			
+			}			
+					
+					Eclipse
+					spring tool suite
+					
+		exception handling:
+=============================
+
+1
+2........
+
+
+
+
+1000		
+					
+					
+						try,catch-->handling code,finally-->clean up,throw-->,throws
+		
+		String name="mahesh";
+				name="rajesh"
+				SOP(name);
+				
+				arrays
+				
+				String names[]={"d","c","b","a"}
+				names[4]AIOE
+				
+				1)Homogeneous 
+				2)size is fixed
+				3)methods
+				
+				
+				class A
+				
+				class B extends A
+				
+				
+				class C extends B
+				
+				
+				java.lang
+				
+	NOTE:
+	
+		1)By default parent class for every java class is java.lang.Object
+		2)By default package available for every java file is java.lang
+		
+Collections				
+				List		-->duplicate are allowed,insertion order is preserved 
+				Set			-->unique	,insertion order is not followed	
+				Map			-->k,v
+				Queue		-->FIFO
+Comparable 
+Comprator
+						JAVA
+				JSE 					JEE 							JME
+		corejava,applets,swings	  servlets,jsp,spring,webservices		android
+
+1)standalone/desktop	
+2)web application
+
+			
+Spring Framework:
+==================				
+					
+	framework:ready made (boiler plate code )					
+					
+	2 types
+			struts,ejb,hibernate,spring.....
+		invasive	struts ,ejb:will force developer to implement predefined api
+		non-invasive 	hibernate,spring::will never force developer to implement predefined api
+
+spring is non-invasive framework,which is used to create light weight and loosley coupled apps					
+					
+
+					non-invasive
+					light weight
+					loosley coupled
+					.java
+					.class--->.jar
+					
+					
+					Servlet
+				1.implements Servlet
+				2.extends GenericServlet/3.HttpServlet				
+		
+		class Login	extends HttpServlet(12)	
+				{
+				12 methods
+				}	//heavy weight /light weight 
+				
+				
+				Rod Johonson
+				
+				interface21-->spring light 
+					
+					
+		loosley coupled/tightly coupled			
+					
+					
+		class Test{
+		public Test(String name)
+		{
+		
+		}
+		
+		public void m1()
+		{
+		
+		}
+		
+		}	
+
+		
+		class Client{
+		main(){
+								object life cycle -->spring container (BeanFactory/ApplicationContext)
+				test.m1();
+		}
+		
+		}					
+					
+					
+					spring framework
+						spring core	/ dependency injection module/IOC module
+						spring jdbc
+						spring ORM
+						spring MVC
+						spring web
+						spring AOP
+						spring rest
+						spring cloud .....
