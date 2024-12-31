@@ -167,3 +167,115 @@ spring is non-invasive framework,which is used to create light weight and loosle
 						spring AOP
 						spring rest
 						spring cloud .....
+						
+						
+					with out maven
+					with maven
+						
+						
+					configuration file	
+						
+Spring Core:
+				setter injection  <property>
+				constrctor injection <constructor-arg>
+				autowiring  -->byname/bytype/constructor
+						
+								configuration --><beans>
+								
+									1.xml configuration
+									2.annotation configuration
+									3.java configuration		@Bean
+						
+	Note:Spring has given annotations for userdefined classes but not for predefined classes
+																			xml	
+																			java
+																			
+				Employee
+
+
+
+				@Bean
+				public Employee getEmployee()
+				{
+					return new Employee();
+				}
+						
+						
+						
+			@Component
+			@Configuration
+			@ComponentScan
+			@Value
+			@Autowired
+			@Scope
+			@PropertySource
+			@Bean
+			@Qualifer
+						
+Spring JDBC :
+
+
+Spring ORM
+
+
+Spring AOP
+
+
+Spring MVC
+
+						
+						
+									java ---->database 
+									
+									
+									JDBC
+									
+	5 steps
+
+1)loading the driver class
+
+2)creating the connection
+
+3)creating the statement
+
+4)execute the query
+
+5)close the connection
+
+
+
+			JDBC:
+			
+			Layered Architecture 
+			
+			
+			
+			Login Application					
+			
+			
+				username				getuname/password			Database logic
+				password 
+						submit				
+			
+			UI layer/Controller layer		service layer			Repository/DAO
+			
+			
+						.java
+			
+			
+			
+			@Service
+			@Repository
+			
+		
+		JDBC			
+		
+spring JDBC		
+			
+			
+
+
+
+
+
+	
