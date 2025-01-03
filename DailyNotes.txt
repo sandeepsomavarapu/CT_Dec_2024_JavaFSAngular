@@ -270,7 +270,114 @@ Spring MVC
 		
 		JDBC			
 		
-spring JDBC		
+spring JDBC			-->JdbcTemplate
+			
+sping mvc 	:Servlets
+
+
+		login
+
+		register
+		
+		home
+		
+		inbox
+
+
+sping mvc --->Front controller --->DispatcherServlet
+
+	http://localhost:8080/projectname
+
+//http://localhost:8080/projectname/classlevelurl/methodlevelurl
+	
+
+
+spring boot intro			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 
