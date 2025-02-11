@@ -294,93 +294,319 @@ sping mvc --->Front controller --->DispatcherServlet
 
 spring boot intro			
 			
+			Autoconfiguration(most of the commonly used classes already configured )
+			embeded server(tomcat)
+			starters(starter parent)
+			actuators(URLs) /beans /config /metrics ........
+			in memory DB(H2)
 			
+JDBC					
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		
-
-
 	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 
+JPA	--->ORM--->Hibernate,eclipse link,toplink,ibatis.......
+			
+				select * from emp;
+				
+				selct eid,ename from emp;//mysql
+				
+				
+				select empId,empName from Employee;
+				
+
+	JPA		
+	hibernate:ORM
+
+			
+		@Entity	
+		@Table(name="products")
+		class Product 
+		{
+		@Id
+		@GeneratedValue
+		@Column(name="pid")
+		private int productId;
+		private String productName;.....
+		
+		
+		}		
+			
+			
+		configuration file(hibernate)	
+			
+			1.database properties  	4
+										
+			2.hibernate properties	3(show_sql,dialect,hbm2ddl.auto)
+									
+		
+
+		junit jars
+	
+			src/test/java
+			
+			
+			@Test
+			@DisplayName()
+			public void testCase()
+			{
+			
+			RGR
+			
+			}
+		
+		
+		
+		
+		String name="sleeping";
+		String name1="sleeping";
+		
+		System.out.println(name.equals(name1));//true
+		System.out.println(name==name1);//false
+		
+		
+	Mockito:
+	=========	
+				controller layer      service layer       repository layer    --->DB
+					
+					
+									addOfTwo(int a,int b)		--->		DB
+										{
+										int result=a+b;
+										...
+										....
+										repo.addOfTwo()
+										}
+											
+											
+		
+		testing
+		
+		ServiceClass service=new ServiceClass();
+		
+		
+		service.addOfTwo(10,20)
+		
+		Mockito+Junit
+		
+	@ExtendMockito	
+		
+		@Mock
+		RepoClass repo;
+		
+		@InjectMocks
+		ServiceClass service;
+		
+		
+		when(repo.addOfTwo(10,20)).thenReturn(30)
+		
+		service.addOfTwo(10,20)
+		
+		
+		JPA
+
+				@Entity
+				@Id
+				@Column
+				@Table
+				@GeneratedValue
+				
+				
+				@OneToOne
+				@OneToMany
+				@ManyToOne
+				@ManyToMany
+			
+			
+			
+			
+			
+			Database Foreign key
+
+
+					RDBMS
+					
+		EmpDept		
+		eid  ename    esal 		 edesg    		deptno   dname  dlocation
+		1	  x			100		developer		10		  A		  Hyd
+		2	  y			200		admin			20		  B		  Banglore
+		3	  z			100		hr				30		  C		  Delhi
+		4	  l			400		developer		10		  A		  Hyd
+		5	  l			760		admin			20		  B		  Banglore
+		
+		
+		
+		Dept
+		deptno   dname   dloc
+		10			A		HYD
+		20			B		Banglore
+		30			C		Delhi
+		
+		delete from dept where deptno=10;
+		
+				EMP  
+		eid  ename    esal 		 edesg       deptno  
+		1	  x			100		developer		10		
+		2	  y			200		admin			20		 
+		3	  z			100		hr				30		 
+		4	  l			400		developer		10		 
+		5	  z			760		admin			20		 
+				
+			
+			on delete cascasde
+			
+		alter table emp add constraint cts_fk foreign key(deptno)references dept(deptno);
+			
+	JPA
+		Employee
+			
+			
+		persistence.xml
+			database properties
+			hibernate properties 
+			
+			
+		EntityManager -->persist,merge,remove,find,createQuery	
+			
+		Relationships
+
+
+Webservices:
+============
+		Sp
+		RMI			JAVA
+		EJB
+		
+		DCOM	.net
+		RPC		C/C++
+		CORBA	
+	
+	SOAP
+	REST
+
+  
+	Spring Boot Rest-DataJpa+HIbernate+Layered Architecture
+			lombok
+			logger
+			sonar
+			maven
+			DTO
+			git
+			aop(logging)
+			validations
+			exception handling
+			security
+			testing
+			
+			microservices
+	Decompose/Divide/Split large project smaller services and later communicate
+				
+			1.Independently developed
+			2.Independently tested
+			3.Independently deployed
+			4.Independently scalled
+
+
+Communication
+				Synchronous :OTP  :HTTP(RestTemplate,Open Fiegn,Web Client)
+				Asynchronous:Order Messageing Protocols(Kafka,activemq,rabbitmq....)
+
+
+
+
+		RestTemplate
+
+
+
+Config Server:
+
+1.spring starter project
+		config server dependency
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-server</artifactId>
+		</dependency>
+		
+		@EnableConfigServer
+		@SpringBootApplication
+		
+		
+		.properties
+		
+		spring.cloud.config.server.git.uri:githuburl
+		port:8080
+		
+
+		microservices
+		
+			config client dependency
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+		
+		spring.config.import=optional:configserver:http://localhost:8888
+
+2.Eureka Server Rigistry & Discovery
+			
+			eureka server 
+				@EnableEurekaServer
+				
+				.properties
+					self-registry
+					fetch-registry
+				
+				
+				
+			for each microservice 
+			eureka discovery client
+			
+			
+spring.application.name=ApiGateWay
+eureka.instance.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
+server.port=3434
+management.endpoints.web.exposure.include=*
+
+
+spring.cloud.gateway.routes[0].id=DEPTSERVICE
+spring.cloud.gateway.routes[0].uri=lb://DEPTSERVICE
+spring.cloud.gateway.routes[0].predicates[0]=Path=/departments/**
+
+spring.cloud.gateway.routes[1].id=EMPLOYEESERVICE
+spring.cloud.gateway.routes[1].uri=lb://EMPLOYEESERVICE
+spring.cloud.gateway.routes[1].predicates[0]=Path=/employees/**
+			
+		Microservices:
+		
+		api gateway	 for single entry point
+		config server for centralised config
+		eureka server for serivce registry and discovery(loadbalanced)
+		circuitbreaker pattern
+		logging(kibana/SLK)
+		jwt security
+		
+			best practices
+				naming conventions
+				comments 
+				logging
+				junit/mockito
+				validations
+				global exception handling 
+				DTO
+				Postman/swagger 
+			
+		QA
+			Core Java 8 features(oops,exception handling,collections)	
+			JDBC
+			JPA+Hibernate
+			Spring CORE
+			+
+			spring JDBC
+			Spring MVC
+			spring JPA
+			SPring Data JPA
+			spring Boot
+			microservices(design patterns spring cloud)
+			
 
 
 
