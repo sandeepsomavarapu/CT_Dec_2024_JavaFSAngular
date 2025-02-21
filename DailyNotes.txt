@@ -608,7 +608,160 @@ spring.cloud.gateway.routes[1].predicates[0]=Path=/employees/**
 			microservices(design patterns spring cloud)
 			
 
-
-
-
+Frontend:
+=========
+		Html,CSS,JS,TS,BS
+		
+		
+		HTML:
+		=====
+			Website :collection of web pages
+			
+					1)static 	gmail	login
+					2)dynamic	gmail home
+	HTML:Static web pages
 	
+	HTML:Tim Berners Lee
+	
+		1989:WWW
+		1991:html 1.0
+		
+		
+		2017 5.2
+	
+	Form 
+		<form>
+			Username :<input type="text" name="uname"/>
+			Password :<input type="password" name="pass"/>
+		</form>
+	
+	IDE-->VSCODE
+	    Username:<input type="text" name="uname"></input><br><br>
+        Password:<input type="password" name="pass"></input><br><br>
+
+        Languages Known:
+        <input type="checkbox" name="telugu">Telugu</input>
+        <input type="checkbox" name="hindi">Hindi</input>
+        <input type="checkbox" name="english">English</input><br><br>
+
+        Gender:
+        <input type="radio" name="gender">Male</input>
+        <input type="radio" name="gender">Female</input>
+        <input type="radio" name="gender">Others</input> <br>
+
+        <input type="submit" value="REGISTER"/>
+	
+CSS:	
+	
+		3
+			
+			1.inline
+			2.internal
+			3.external
+	
+	
+		id selctor		#
+		class selector	.
+		group selector  h1,p,h3
+		element selector  h2
+		all selector	*
+	
+Bootstrap:
+
+	bootstrap html,css,js framework which is used to create responsive web pages
+	
+	download
+	CDN
+	
+Javascript:
+===========
+ECMAScript--specification   ES6 let,const,arrow 
+Javascript--implementation	-->Brenden Eich 1995
+
+	React,Angular,MERN,MEAN,VUE,Express......
+	
+		dynamic
+		can change html content
+		can change css
+		we can do front end validations
+	Javascript Object based language
+	
+	Registration PAGE 
+		3 ways
+		
+		1.inline	<body><script>
+		2.internal	<head><script>
+		3.external	.js
+	
+				String name="amber";//static typed PL
+	variables		dynamic typed var name="";  
+	datatypes
+	functions
+	objects
+	arrays
+	events
+	validations
+	date.....
+	
+		var name;
+	
+	
+	
+	
+
+Typescript:
+==========
+Typescript-->implementation
+
+		var name="suresh"  :Browsers can understand only javascript
+			
+			transpiler 
+			TSC
+		
+		var name:string="suresh"
+			name=123
+			
+			
+			function add(a,b){
+				return a+b;
+			}
+			add(1,2)
+			add("kichu","shavi")
+			
+			typescript=javascript+types
+
+Angular:
+========
+ANGULAR JS-->js
+angular2 --TS
+	
+	google
+
+		1.let/var/const
+		2.arrow functions
+		3.js vs ts
+		4.library vs framework	
+		
+	Angular javascript framework 	--->SPA
+	two way data binding
+		model<-->view
+		
+	npm install -g typescript
+	npm install -g create-react-app
+	npm install -g @agnular/cli
+
+			ng
+			
+			component root--APP+ts+css+html+spec.ts 
+			
+			
+			 npm install -g @angular/cli
+	
+			
+			ng serve
+			ng generate component login
+			ng g c demo
+			
+			ng serve --port=1232
+			
+			--no-standalone
